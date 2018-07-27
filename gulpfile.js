@@ -18,7 +18,7 @@ const srcPath = '/src',
   destPath = '/public';
 
 gulp.task('clean', () => {
-  return gulp.src([`.${destPath}`], {read: false}) // 選項讀取：false阻止gulp讀取文件的內容，使此任務更快。
+  return gulp.src([`.${destPath}`], {read: false}) // 選項讀取：false 阻止 gulp 讀取文件的內容，使此任務更快。
     .pipe($.clean());
 });
 
@@ -26,7 +26,7 @@ gulp.task('ejs', () => {
   return gulp.src([`.${srcPath}/**/[^_]*.ejs`])
     .pipe($.plumber())
     .pipe($.ejs({}, {}, {ext: '.html'}))
-    .pipe(gulp.dest(`${destPath}/`))
+    .pipe(gulp.dest(`.${destPath}`))
     .pipe(browserSync.reload({
       stream: true,
     }));

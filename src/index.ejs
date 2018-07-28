@@ -9,26 +9,126 @@
     <link rel="stylesheet" href="css/all.css?<%= new Date().getTime() %>">
 </head>
 <body>
-
-
-<div class="opening">
+<section class="home">
     <div class="star">
-        <div class="star__top"></div>
-        <div class="star__bottom"></div>
+        <div class="star-top"></div>
+        <div class="star-bottom"></div>
     </div>
     <div class="square"></div>
     <div class="circle"></div>
     <div class="text-block">
-        <div class="text-block__title">
+        <div class="text-block-title">
             GEOMETRY PERSON
         </div>
-        <div class="text-block__desc">
+        <div class="text-block-desc">
             find your core personality type in shapes!
         </div>
     </div>
-</div>
+</section>
 
+<section class="q1">
+    <div class="text-block">
+        <div class="text-block-title">
+            GEOMETRY PERSON
+        </div>
+        <div class="text-block-desc">
+            find your core personality type in shapes!
+        </div>
+    </div>
+    <div class="q-section">
+        <div class="q-section-wrapper">
+            <div class="q-section-number">
+                Q1
+            </div>
+            <div class="q-section-title">
+                If one day you get a gift that can change the rule of the world, which ability will you choose?
+            </div>
+            <div class="q-section-desc">
+                Choose the answer appeared in your mind instantly
+            </div>
+            <ul class="q-section-options">
+                <li data-value="1">Destroy all humans in the world</li>
+                <li data-value="2">Make the war never happened</li>
+                <li data-value="3">You won’t get old and live forever</li>
+            </ul>
+        </div>
+    </div>
+    <div class="animate-section">
+        <div class="animate-section-square"></div>
+        <div class="animate-section-triangle"></div>
+        <div class="animate-section-circle"></div>
+    </div>
+</section>
 
+<section class="q2">
+    <div class="q-section">
+        <div class="q-section-wrapper">
+            <div class="q-section-number">
+                Q2
+            </div>
+            <div class="q-section-title">
+                Imagine you’re almost late, but totally lost at a forked road. Which way do you prefer to go?
+            </div>
+            <div class="q-section-desc">
+                Choose the answer appeared in your mind instantly
+            </div>
+            <ul class="q-section-options">
+                <li data-value="1">The left one</li>
+                <li data-value="2">The right one</li>
+                <li data-value="3">Open Google Map</li>
+            </ul>
+        </div>
+    </div>
+    <div class="animate-section">
+        <div class="animate-section-square"></div>
+        <div class="animate-section-triangle"></div>
+        <div class="animate-section-circle"></div>
+    </div>
+</section>
+
+<section class="calculating hide">
+    <div class="text-block">
+        <div class="text-block-title">You are...</div>
+        <div class="text-block-desc">Keep scrolling to show the result</div>
+    </div>
+
+    <div class="trigger1" style="position:relative; top:100vh"></div>
+    <div class="trigger2" style="position:relative; top:200vh"></div>
+    <div class="trigger3" style="position:relative; top:300vh"></div>
+    <div class="trigger4" style="position:relative; top:400vh"></div>
+</section>
+
+<section class="result hide">
+    <div class="result-text invisible">Your personality is</div>
+    <div class="result-ans invisible">TRIANGLE</div>
+    <div class='tri triangle1'></div>
+    <div class='tri triangle2'></div>
+    <div class='tri triangle3'></div>
+    <div class='tri triangle4'></div>
+    <div class='tri triangle5'></div>
+    <div class='tri triangle6'></div>
+    <div class='tri triangle7'></div>
+    <div class='triangle-blue'></div>
+    <div class='triangle-white'></div>
+    <div class='triangle-black'></div>
+    <div class='result-result invisible'>
+        <div class='result-per'>
+            AGGRESSIVE
+        </div>
+        <div class='result-per'>
+            INDEPENDENT
+        </div>
+        <div class='result-per'>
+            SELF-MOTIVATED
+        </div>
+        <div class='result-desc'>
+            The triangle type people are natural-born leaders, full of passion and motivation,  trying to fix their mistakes as they go.
+        </div>
+        <div class='result-btn' onclick="location.reload()">
+            TRY AGAIN
+        </div>
+    </div>
+</section>
 <script src="js/vendor.js?<%= new Date().getTime() %>"></script>
 <script src="js/all.js?<%= new Date().getTime() %>"></script>
 </body>

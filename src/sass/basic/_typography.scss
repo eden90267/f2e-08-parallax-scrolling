@@ -1,5 +1,17 @@
-html,body {
+html, body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: white;
+}
+
+body {
+  overflow: hidden;
+}
+
+.hide {
+  display: none !important;
+}
+
+.invisible {
+  opacity: 0;
 }
